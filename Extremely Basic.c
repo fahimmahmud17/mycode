@@ -1,24 +1,26 @@
-/*beecrowd | 1001
-Extremely Basic
+/*beecrowd | 1002
+Area of a Circle
 Adapted by Neilor Tonin, URI  Brazil
 
 Timelimit: 1
-Read 2 variables, named A and B and make the sum of these two variables, assigning its result to the variable X. Print X as shown below. Print endline after the result otherwise you will get “Presentation Error”.
+The formula to calculate the area of a circumference is defined as A = Ï€ . R2. Considering to this problem that Ï€ = 3.14159:
+
+Calculate the area using the formula given in the problem description.
 
 Input
-The input file will contain 2 integer numbers.
+The input contains a value of floating point (double precision), that is the variable R.
 
 Output
-Print the letter X (uppercase) with a blank space before and after the equal signal followed by the value of X, according to the following example.
-
-Obs.: don't forget the endline after all.*/
-
+Present the message "A=" followed by the value of the variable, as in the example bellow, with four places after the decimal point. Use all double precision variables. Like all the problems, don't forget to print the end of line after the result, otherwise you will receive "Presentation Error".
+*/
 #include<stdio.h>
+
 int main()
 {
-    int A,B;
-    scanf("%d",&A);
-    scanf("%d",&B);
-   printf("X = %d\n", A+B);
+double R,aoc;
+scanf("%lf",&R);
+aoc=3.14159*(R*R);
+printf("A=%.4lf\n",aoc);
 return 0;
 }
+
